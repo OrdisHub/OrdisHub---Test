@@ -36,3 +36,4 @@ local Window = Rayfield:CreateWindow({
 
 local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
+local ThirdTab = Window:CreateTab("Negative Update Speed ISTG", 4483362458) -- Title, Image
