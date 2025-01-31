@@ -95,7 +95,14 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
-
+ local Section = Tab:CreateSection("Credits:")
+ local Button = Tab:CreateButton({
+    Name = "Copy Discord Invite",
+    Callback = function()
+        setclipboard("https://discord.gg/valorant") -- Copies the Discord invite link to the clipboard
+    end,
+ })
+ 
 
 
 
