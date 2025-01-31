@@ -45,7 +45,7 @@ local Window = Rayfield:CreateWindow({
 
 
  -- Player Tab ------------------------------------------------------------------------------------------------------------------------------
- local Tab = Window:CreateTab("Player") -- Title, Image
+ local Tab = Window:CreateTab("AutoFarm") -- Title, Image
 
 
 
@@ -54,7 +54,7 @@ local Window = Rayfield:CreateWindow({
 
 
   -- Auto Farm Tab ------------------------------------------------------------------------------------------------------------------------------
-  local Tab = Window:CreateTab("AutoFarm") -- Title, Image
+  local Tab = Window:CreateTab("Player") -- Title, Image
 
 
 
