@@ -38,14 +38,14 @@ local Window = Rayfield:CreateWindow({
 
 
  -- Main Tab ------------------------------------------------------------------------------------------------------------------------------
- local Tab = Window:CreateTab("Main", 14456047430) -- Title, Image
+ local Tab = Window:CreateTab("Main") -- Title, Image
 
 
 
 
 
  -- Player Tab ------------------------------------------------------------------------------------------------------------------------------
- local Tab = Window:CreateTab("Player", 9741402705) -- Title, Image
+ local Tab = Window:CreateTab("Player") -- Title, Image
 
 
 
@@ -54,7 +54,7 @@ local Window = Rayfield:CreateWindow({
 
 
   -- Auto Farm Tab ------------------------------------------------------------------------------------------------------------------------------
-  local Tab = Window:CreateTab("AutoFarm", 16600276335) -- Title, Image
+  local Tab = Window:CreateTab("AutoFarm") -- Title, Image
 
 
 
@@ -68,7 +68,7 @@ local Window = Rayfield:CreateWindow({
 
 
    -- Misc Tab ------------------------------------------------------------------------------------------------------------------------------
- local Tab = Window:CreateTab("Misc", 4483362458) -- Title, Image
+ local Tab = Window:CreateTab("Misc") -- Title, Image
  local Section = Tab:CreateSection("Server Commands")
 
  local Button = Tab:CreateButton({
