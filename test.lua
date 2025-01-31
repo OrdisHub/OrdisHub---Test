@@ -38,11 +38,41 @@ local Window = Rayfield:CreateWindow({
 
 
  -- Main Tab ------------------------------------------------------------------------------------------------------------------------------
- local Tab = Window:CreateTab("Main Tab", 4483362458) -- Title, Image
- local Section = Tab:CreateSection("Main Stuff")
+ local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+
+
+
+
+ -- Player Tab ------------------------------------------------------------------------------------------------------------------------------
+ local Tab = Window:CreateTab("Player", 4483362458) -- Title, Image
+
+
+
+
+
+
+
+  -- Auto Farm Tab ------------------------------------------------------------------------------------------------------------------------------
+  local Tab = Window:CreateTab("AutoFarm", 4483362458) -- Title, Image
+
+
+
+
+
+
+
+
+
+
+
+
+   -- Misc Tab ------------------------------------------------------------------------------------------------------------------------------
+ local Tab = Window:CreateTab("Misc", 4483362458) -- Title, Image
+ local Section = Tab:CreateSection("Server Commands")
 
  local Button = Tab:CreateButton({
-    Name = "Server Hop",
+    Name = "Server Hop (Low Player)",
     Callback = function()
         local Http = game:GetService("HttpService")
         local TPS = game:GetService("TeleportService")
@@ -64,8 +94,6 @@ local Window = Rayfield:CreateWindow({
         TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
     end,
  })
-
-
 
 
 
