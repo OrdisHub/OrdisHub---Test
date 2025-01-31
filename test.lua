@@ -38,7 +38,7 @@ local Window = Rayfield:CreateWindow({
 
 
  -- Main Tab ------------------------------------------------------------------------------------------------------------------------------
- local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+ local Tab = Window:CreateTab("Main") -- Title, Image
 
 
 
