@@ -34,13 +34,34 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
- local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
- local Section = Tab:CreateSection("Section Example")
+
+
+
+ -- Main Tab ------------------------------------------------------------------------------------------------------------------------------
+ local Tab = Window:CreateTab("Main Tab", 4483362458) -- Title, Image
+ local Section = Tab:CreateSection("Main Stuff")
 
  local Button = Tab:CreateButton({
-    Name = "Button Example",
+    Name = "Server Hop",
     Callback = function()
-    -- The function that takes place when the button is pressed
+        local Http = game:GetService("HttpService")
+        local TPS = game:GetService("TeleportService")
+        local Api = "https://games.roblox.com/v1/games/"
+        
+        local _place = game.PlaceId
+        local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+        function ListServers(cursor)
+          local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+          return Http:JSONDecode(Raw)
+        end
+        
+        local Server, Next; repeat
+          local Servers = ListServers(Next)
+          Server = Servers.data[1]
+          Next = Servers.nextPageCursor
+        until Server
+        
+        TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
     end,
  })
 
