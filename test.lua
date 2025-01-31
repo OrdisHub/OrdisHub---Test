@@ -65,7 +65,7 @@ local Button = Tab:CreateButton({
     end,
  })
 
- Button:Set("ServerHop")
+Button:Set("ServerHop")
 
 
 
