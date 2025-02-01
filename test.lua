@@ -123,17 +123,6 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Button = Tab:CreateButton({
-   Name = "Yuki Fortress | Level 240+",
-   Callback = function()
-      local player = game.Players.LocalPlayer
-      if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-          player.Character.HumanoidRootPart.CFrame = CFrame.new(3779.62646, 1440.41016, 2265.01685)
-      end
-   end,
-})
-
-
 -- World Boss TPs  ------------------------------------------------------------------------------------
 local Section = Tab:CreateSection("World Boss Spawn Locations")
 
